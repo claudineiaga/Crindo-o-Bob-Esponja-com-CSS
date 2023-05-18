@@ -1,0 +1,724 @@
+.container {
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 0 20px;
+    height: 500px;
+    box-sizing: border-box;
+}
+.bob {
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    margin-left: -90px;
+    width: 180px;
+    height: 200px;
+}
+.bob .esponja {
+    position: relative;
+    height: 150px;
+    width: 180px;
+    z-index: 20;
+}
+.bob .esponja .shape {
+    border-top: 150px solid #f6e607;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 150px;
+    z-index: -1px;
+}
+
+.bob .esponja .bolhas span {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    background: #caad09;
+    border-radius: 50%;
+}
+.bob .esponja .bolhas span:nth-of-type(1) {
+    top: 10px;
+    left: 22px;
+    transform: rotate(20deg);
+}
+.bob .esponja .bolhas span:nth-of-type(2) {
+    height: 10px;
+    width: 8px;
+    top: 30px;
+    left: 14px;
+    transform: rotate(20deg);
+}
+.bob .esponja .bolhas span:nth-of-type(3) {
+    bottom: 25px;
+    left: 20px;
+    transform: rotate(-20deg);
+}
+.bob .esponja .bolhas span:nth-of-type(4) {
+    height: 10px;
+    width: 8px;
+    bottom: 15px;
+    left: 37px;
+    transform: rotate(-20deg);
+}
+.bob .esponja .bolhas span:nth-of-type(5) {
+    bottom: 10px;
+    right: 30px;
+    transform: rotate(-140deg);
+}
+.bob .esponja .bolhas span:nth-of-type(6) {
+    height: 10px;
+    width: 8px;
+    bottom: 30px;
+    right: 20px;
+    transform: rotate(-140deg);
+}
+.bob .esponja .bolhas span:nth-of-type(7) {
+    top: 12px;
+    right: 15px;
+    transform: rotate(-140deg);
+}
+.bob .esponja > .top .ondas, .bob .esponja > 
+.esquerdo .ondas, .bob .esponja > 
+.bottom .ondas, .bob .esponja > .direito .ondas {
+    position: absolute;
+    width: 30px;
+}
+.bob .esponja > .top .ondas:before, 
+.bob .esponja > .esquerdo .ondas:before, 
+.bob .esponja > .bottom .ondas:before, 
+.bob .esponja > .direito .ondas:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 15px;
+    border-top: 2px solid #d8be18;
+    background: #f2e204;
+    top: -3px;
+    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
+}
+.bob .esponja > .top .ondas:after, 
+.bob .esponja > .esquerdo .ondas:after, 
+.bob .esponja > .bottom .ondas:after, 
+.bob .esponja > .direito .ondas:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 15px;
+    border-bottom: 2px solid #b1984c;
+    background: white;
+    top: -1px;
+    right: 0;
+    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
+}
+.bob .esponja > .top .ondas {
+    top: 0;
+    left: 0;
+}
+.bob .esponja > .top .ondas:nth-of-type(2) {
+    left: 30px;
+}
+.bob .esponja > .top .ondas:nth-of-type(3) {
+    left: 60px;
+}
+.bob .esponja > .top .ondas:nth-of-type(4) {
+    left: 90px;
+}
+.bob .esponja > .top .ondas:nth-of-type(5) {
+    left: 120px;
+}
+.bob .esponja > .top .ondas:nth-of-type(6) {
+    left: 150px;
+}
+.bob .esponja > .esquerdo .ondas {
+    left: -14px;
+    top: 15px;
+    transform: rotate(-95deg);
+}
+.bob .esponja > .esquerdo .ondas:nth-of-type(2) {
+    top: 45px;
+    left: -11px;
+}
+.bob .esponja > .esquerdo .ondas:nth-of-type(3) {
+    top: 75px;
+    left: -8px;
+}
+.bob .esponja > .esquerdo .ondas:nth-of-type(4) {
+    top: 105px;
+    left: -5px;
+}
+.bob .esponja > .esquerdo .ondas:nth-of-type(5) {
+    top: 135px;
+    left: -2px;
+}
+.bob .esponja > .direito .ondas {
+    right: -14px;
+    top: 15px;
+    transform: rotate(95deg);
+}
+.bob .esponja > .direito .ondas:nth-of-type(2) {
+    top: 45px;
+    right: -11px;
+}
+.bob .esponja > .direito .ondas:nth-of-type(3) {
+    top: 75px;
+    right: -8px;
+}
+.bob .esponja > .direito .ondas:nth-of-type(4) {
+    top: 105px;
+    right: -5px;
+}
+.bob .esponja > .direito .ondas:nth-of-type(5) {
+    top: 135px;
+    right: -2px;
+}
+.bob .esponja > .bottom .ondas {
+    left: 15px;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+.bob .esponja > .bottom .ondas:nth-of-type(3):after {
+    background: #f7e703;
+}
+.bob .esponja > .bottom .ondas:nth-of-type(2) {
+    left: 45px;
+}
+.bob .esponja > .bottom .ondas:nth-of-type(3) {
+    left: 75px;
+}
+.bob .esponja > .bottom .ondas:nth-of-type(4) {
+    left: 105px;
+}
+.bob .esponja > .bottom .ondas:nth-of-type(5) {
+    left: 135px;
+}
+.bob .esponja .cilio {
+    position: absolute;
+    top: 22px;
+}
+.bob .esponja .cilio.esquerdo {
+    left: 46px;
+}
+.bob .esponja .cilio.direito {
+    right: 46px;
+}
+.bob .esponja .cilio .chicote {
+    height: 9px;
+    width: 3px;
+    background: black;
+    margin-right: 9px;
+    float: left;
+    border-radius: 50%;
+}
+.bob .esponja .cilio .chicote:nth-of-type(1) {
+    transform: rotate(-15deg);
+    margin-top: 2px;
+}
+.bob .esponja .cilio .chicote:nth-of-type(2) {
+    transform: rotate(0deg);
+}
+.bob .esponja .cilio .chicote:nth-of-type(3) {
+    transform: rotate(15deg);
+    margin-top: 2px;
+    margin-right: 0;
+}
+.bob .esponja .olho {
+    position: absolute;
+    top: 30px;
+    height: 55px;
+    width: 58px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.bob .esponja .olho.esquerdo {
+    left: 30px;
+}
+.bob .esponja .olho.esquerdo .pupila {
+    left: 45%;
+}
+.bob .esponja .olho.direito {
+    right: 30px;
+}
+.bob .esponja .olho.direito .pupila {
+    right: 45%;
+}
+.bob .esponja .olho .pupila {
+    position: absolute;
+    top: 50%;
+    margin-top: -8.5px;
+    height: 17px;
+    width: 17px;
+    background: #69cddc;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.bob .esponja .olho .pupila .ponto {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: black;
+    top: 50%;
+    margin-top: -4px;
+    left: 50%;
+    margin-left: -4px;
+    border-radius: 50%;
+}
+.bob .esponja .nariz {
+    position: absolute;
+    top: 67px;
+    left: 79px;
+    height: 22px;
+    width: 18px;
+    background: #f5e506;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid transparent;
+    border-radius: 50%;
+    z-index: 10;
+}
+.bob .esponja .bochecha {
+    position: absolute;
+    top: 47%;
+    height: 16px;
+    width: 22px;
+    border-top: 2px solid #e64b39;
+    border-left: 2px solid #e64b39;
+    border-right: 2px solid #e64b39;
+    border-radius: 50%;
+    border-bottom: 2px solid transparent;
+    background: #f3e302;
+    z-index: 6;
+}
+.bob .esponja .bochecha.esquerdo {
+    left: 20px;
+    transform: rotate(-20deg);
+}
+.bob .esponja .bochecha.direito {
+    right: 20px;
+    transform: rotate(20deg);
+}
+.bob .esponja .bochecha .sarda {
+    height: 2px;
+    width: 2px;
+    float: left;
+    margin-right: 3px;
+    background: #e64b39;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+.bob .esponja .bochecha .sarda:nth-of-type(1) {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.bob .esponja .bochecha .sarda:nth-of-type(3) {
+    margin-top: 5px;
+    margin-right: 0;
+}
+.bob .esponja .dimple {
+    position: absolute;
+    top: 83px;
+    width: 8px;
+    height: 12px;
+    border-top: 2px solid black;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-radius: 50%;
+    z-index: 8;
+}
+.bob .esponja .dimple.esquerdo {
+    left: 30px;
+    transform: rotate(-30deg);
+}
+.bob .esponja .dimple.direito {
+    right: 30px;
+    transform: rotate(30deg);
+}
+.bob .esponja .boca {
+    position: absolute;
+    bottom: 38px;
+    left: 50%;
+    margin-left: -82px;
+    width: 160px;
+    height: 180px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-radius: 50%;
+    z-index: 7;
+}
+.bob .esponja .boca .dente {
+    position: absolute;
+    bottom: -15px;
+    height: 10px;
+    width: 12px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid transparent;
+    background: white;
+    border-radius: 0 0 30% 30%;
+}
+.bob .esponja .boca .dente.esquerdo {
+    left: 38%;
+    transform: rotate(6deg);
+}
+.bob .esponja .boca .dente.direito {
+    right: 38%;
+    transform: rotate(-6deg);
+}
+.bob .esponja .queixo {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 25px;
+    height: 10px;
+    border-bottom: 2px solid #ed914a;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-radius: 50%;
+    margin-left: -25px;
+}
+.bob .esponja .queixo.direito {
+    left: 63%;
+}
+.bob > .bottom {
+    width: 138px;
+    height: 50px;
+    position: relative;
+    margin-top: -6px;
+    margin-left: 21px;
+    background: whitesmoke;
+    border-top: 2px solid black;
+    z-index: 10;
+}
+.bob > .bottom .borda {
+    position: absolute;
+    z-index: 2;
+}
+.bob > .bottom .borda.esquerdo, 
+.bob > .bottom .borda.direito {
+    height: 50px;
+    width: 20px;
+    background: white;
+    top: 0;
+}
+.bob > .bottom .borda.esquerdo {
+    border-left: 2px solid black;
+    left: -2px;
+    transform: rotate(-6deg);
+}
+.bob > .bottom .borda.direito {
+    border-right: 2px solid black;
+    right: -2px;
+    transform: rotate(6deg);
+}
+.bob > .bottom .borda.bottom {
+    bottom: -2px;
+    left: 0;
+    width: 138px;
+    border-bottom: 2px solid black;
+}
+.bob > .bottom .collar {
+    position: absolute;
+    top: -12px;
+    height: 20px;
+    width: 30px;
+    border: 2px solid black;
+    z-index: 5;
+}
+.bob > .bottom .collar.esquerdo {
+    left: 30px;
+    border-radius: 20% 20% 20% 60%;
+    transform: rotate(30deg);
+}
+.bob > .bottom .collar.direito {
+    right: 30px;
+    border-radius: 20% 20% 60% 20%;
+    transform: rotate(-30deg);
+}
+.bob > .bottom .manga {
+    position: absolute;
+    top: -20px;
+    height: 30px;
+    width: 20px;
+    border: 2px solid black;
+    background: white;
+    border-radius: 80% 80% 40% 40%;
+    z-index: 1;
+}
+.bob > .bottom .manga.esquerdo {
+    left: -15px;
+    transform: rotate(8deg);
+}
+.bob > .bottom .manga.direito {
+    right: -15px;
+    transform: rotate(-8deg);
+}
+.bob > .bottom .braco {
+    position: absolute;
+    top: 10px;
+    height: 45px;
+    width: 5px;
+    background: #f6e602;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    z-index: 0;
+}
+.bob > .bottom .braco.esquerdo {
+    left: -8px;
+    transform: rotate(-6deg);
+}
+.bob > .bottom .braco.direito {
+    right: -8px;
+    transform: rotate(6deg);
+}
+.bob > .bottom .mao {
+    position: absolute;
+    top: 51px;
+    background: #f5e503;
+    height: 16px;
+    width: 12px;
+    border-radius: 30px;
+    border: 2px solid black;
+    z-index: -1;
+}
+.bob > .bottom .mao.esquerdo {
+    left: -7px;
+}
+.bob > .bottom .mao.esquerdo .dedo {
+    transform: rotate(-10deg);
+}
+.bob > .bottom .mao.esquerdo .dedo:nth-of-type(1) {
+    left: 6px;
+    transform: rotate(-20deg);
+}
+.bob > .bottom .mao.esquerdo .dedo:nth-of-type(2) {
+    left: 3px;
+    transform: rotate(-15deg);
+}
+.bob > .bottom .mao.esquerdo .dedo:nth-of-type(3) {
+    left: -1px;
+}
+.bob > .bottom .mao.direito {
+    right: -7px;
+}
+.bob > .bottom .mao.direito .dedo {
+    transform: rotate(10deg);
+}
+.bob > .bottom .mao.direito .dedo:nth-of-type(1) {
+    right: 6px;
+    transform: rotate(20deg);
+}
+.bob > .bottom .mao.direito .dedo:nth-of-type(2) {
+    right: 3px;
+    transform: rotate(15deg);
+}
+.bob > .bottom .mao.direito .dedo:nth-of-type(3) {
+    right: -1px;
+}
+.bob > .bottom .mao .dedo {
+    position: absolute;
+    top: 6px;
+    height: 15px;
+    width: 3px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid transparent;
+    border-radius: 0 0 20px 20px;
+    background: #fae902;
+}
+.bob > .bottom .mao .dedo:nth-of-type(1) {
+    top: 3px;
+    height: 13px;
+}
+.bob > .bottom .mao .dedo:nth-of-type(2) {
+    top: 5px;
+}
+.bob > .bottom .mao .dedo:nth-of-type(3) {
+    height: 13px;
+}
+.bob > .bottom .gravata-no {
+    border-top: 10px solid red;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 0;
+    width: 10px;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    margin-left: -7px;
+    z-index: 11;
+}
+.bob > .bottom .gravata-no:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+.bob > .bottom .gravata-longa {
+    position: relative;
+    top: -8px;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 30px solid red;
+    z-index: 10;
+}
+.bob > .bottom .gravata-longa:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid red;
+    top: 30px;
+    left: -10px;
+}
+.bob > .bottom .pernadecalca {
+    position: absolute;
+    bottom: -12px;
+    height: 20px;
+    width: 20px;
+    background: #c96936;
+    border: 2px solid black;
+    border-radius: 80% / 30%;
+}
+.bob > .bottom .pernadecalca.esquerdo {
+    left: 30px;
+}
+.bob > .bottom .pernadecalca.direito {
+    right: 30px;
+}
+.bob > .bottom .calca {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 25px solid #c96936;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    height: 0;
+    width: calc(100% - 6px);
+    z-index: 3;
+}
+.bob > .bottom .calca .borda {
+    position: absolute;
+    top: -25px;
+    left: -3px;
+    width: calc(100% + 6px);
+    border-top: 2px solid black;
+    height: 10px;
+}
+.bob > .bottom .calca .cinto {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: calc(100% - 10px);
+    border-top: 6px dashed black;
+    margin: 5px 5px;
+    height: 10px;
+}
+.bob > .bottom .perna {
+    position: absolute;
+    bottom: -50px;
+    height: 45px;
+    width: 5px;
+    background: #f7e703;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    z-index: -1;
+}
+.bob > .bottom .perna.esquerdo {
+    left: 37px;
+}
+.bob > .bottom .perna.direito {
+    right: 37px;
+}
+.bob > .bottom .perna .meia {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: white;
+    border-top: 2px solid black;
+}
+.bob > .bottom .perna .meia:before, 
+.bob > .bottom .perna .meia:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+}.bob > .bottom .perna .meia:before {
+    background: #b6ebf1;
+    top: 15%;
+}
+.bob > .bottom .perna .meia:after {
+    top: 35%;
+    background: #e4473f;
+}
+.bob > .bottom .pe {
+    position: absolute;
+    bottom: -65px;
+    width: 20px;
+    height: 18px;
+    background: black;
+    border-radius: 20px;
+}
+.bob > .bottom .pe:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    background: white;
+    border-radius: 20px;
+    height: 3px;
+    width: 4px;
+}
+.bob > .bottom .pe.esquerdo {
+    left: 20px;
+}
+.bob > .bottom .pe.esquerdo:after {
+    left: 5px;
+    transform: rotate(-45deg);
+}
+.bob > .bottom .pe.esquerdo:before {
+    right: -10px;
+}
+bob > .bottom .pe.esquerdo .sapato {
+    right: -12px;
+    transform: rotate(-20deg);
+}
+.bob > .bottom .pe.direito {
+    right: 20px;
+}
+.bob > .bottom .pe.direito:after {
+    right: 5px;
+    transform: rotate(45deg);
+}
+
+.bob > .bottom .pe.direito:before {
+    left: -10px;
+}
+.bob > .bottom .pe.direito .sapato {
+    left: -12px;
+    transform: rotate(20deg);
+}
+.bob > .bottom .pe:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 8px;
+    width: 10px;
+    background: black;
+}
+.bob > .bottom .pe .sapato {
+    position: absolute;
+    bottom: 3px;
+    width: 30px;
+    height: 14px;
+    background: black;
+    border-radius: 20px;
+}
